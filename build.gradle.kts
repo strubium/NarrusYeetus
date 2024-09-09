@@ -1,6 +1,6 @@
 
 plugins {
-    id("fabric-loom") version "1.3.9"
+    id("fabric-loom") version "1.7-SNAPSHOT"
 }
 
 group = project.properties["maven_group"]!!
