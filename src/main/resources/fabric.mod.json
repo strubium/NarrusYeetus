@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "narrus_yeetus",
+  "id": "narrus_yeetus_no_error",
   "version": "${version}",
-  "name": "Narrus Yeetus",
+  "name": "Narrus Yeetus no error",
   "description": "Remove the pesky narrator and all the errors related to it.",
   "authors": [
-    "TheEnderCore"
+    "TheEnderCore",
+    "strubium"
   ],
   "mixins": [
     "narrus_yeetus.mixins.json"
