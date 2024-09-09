@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public interface NarratorYeeter {
     @Inject(at = @At("HEAD"), method = "getNarrator", cancellable = true, remap = false)
     private static void getNarrator(@NotNull CallbackInfoReturnable<Narrator> cir) {
-        LoggerFactory.getLogger("Narrator").log("Narrus Yeetus!");
+        LoggerFactory.getLogger("Narrator").info("NarrusYeetus has disabled the narrator!");
         cir.setReturnValue(new Narrator() {
             @Override
             public void say(String msg, boolean interrupt) {}
