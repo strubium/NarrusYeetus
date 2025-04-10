@@ -14,8 +14,7 @@ public interface NarratorYeeter {
     private static void getNarrator(@NotNull CallbackInfoReturnable<Narrator> cir) {
         LoggerFactory.getLogger("Narrator").info("NarrusYeetus has disabled the narrator!");
         cir.setReturnValue(new Narrator() {
-            @Override
-            public void say(String msg, boolean interrupt) {}
+            @Override public void say(String msg, boolean interrupt, float pitch) {}
             @Override public void clear() {}
             @Override public boolean active() {return false;}
             @Override public void destroy() {}

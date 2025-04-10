@@ -1,4 +1,3 @@
-
 plugins {
     id("fabric-loom") version "1.10-SNAPSHOT"
 }
@@ -12,8 +11,8 @@ repositories {
 }
 
 dependencies {
-    minecraft("com.mojang:minecraft:1.20.1")
-    mappings("net.fabricmc:yarn:1.20.1+build.10:v2")
+    minecraft("com.mojang:minecraft:1.21.5")
+    mappings("net.fabricmc:yarn:1.21.5+build.1:v2")
     modImplementation("net.fabricmc:fabric-loader:${property("loader_version")}")
 }
 
@@ -26,7 +25,8 @@ tasks {
             expand(mapOf("version" to project.version))
         }
     }
-    val targetJavaVersion = 17
+
+    val targetJavaVersion = 21
     withType<JavaCompile> {
         options.encoding = "UTF-8"
         options.release.set(targetJavaVersion)
