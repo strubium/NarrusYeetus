@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Narrator.class)
-public interface NarratorYeeter {
+public interface NarratorYeeterMixin {
     @Inject(at = @At("HEAD"), method = "getNarrator", cancellable = true, remap = false)
     private static void getNarrator(@NotNull CallbackInfoReturnable<Narrator> cir) {
 

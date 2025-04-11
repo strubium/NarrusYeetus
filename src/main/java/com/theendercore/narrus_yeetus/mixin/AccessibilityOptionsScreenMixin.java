@@ -22,9 +22,12 @@ public class AccessibilityOptionsScreenMixin {
     private static void removeNarrator(GameOptions gameOptions, CallbackInfoReturnable<SimpleOption<?>[]> cir) {
         SimpleOption<?>[] original = cir.getReturnValue();
 
-        // Filter out the narrator option
+        // Filter out the narrator and narrator hotkey options
         SimpleOption<?>[] filtered = Arrays.stream(original)
-                .filter(option -> option != gameOptions.getNarrator())
+                .filter(option ->
+                        option != gameOptions.getNarrator() &&
+                        option != gameOptions.getNarratorHotkey()
+                )
                 .toArray(SimpleOption[]::new);
 
         cir.setReturnValue(filtered);
