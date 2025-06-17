@@ -11,8 +11,8 @@ repositories {
 }
 
 dependencies {
-    minecraft("com.mojang:minecraft:1.21.6-pre3")
-    mappings("net.fabricmc:yarn:1.21.6-pre3+build.1:v2")
+    minecraft("com.mojang:minecraft:1.21.6")
+    mappings("net.fabricmc:yarn:1.21.6+build.1:v2")
     modImplementation("net.fabricmc:fabric-loader:${property("loader_version")}")
     // add other mod dependencies here as needed
 }
